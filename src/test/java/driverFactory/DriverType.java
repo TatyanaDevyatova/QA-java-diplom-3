@@ -1,4 +1,5 @@
 package driverFactory;
 
-public enum DraverType {
+public enum DriverType {
+    CHROME, YANDEX
 }
