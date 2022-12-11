@@ -24,7 +24,7 @@ public class ConstructorTests {
         this.driverType = driverType;
     }
 
-    String expectedText = "tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect";
+    private final String expectedText = "tab_tab__1SPyG tab_tab_type_current__2BEPc pt-4 pr-10 pb-4 pl-10 noselect";
 
     @Before
     public void setUp() {

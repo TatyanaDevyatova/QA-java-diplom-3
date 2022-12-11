@@ -27,8 +27,8 @@ public class UserRegistrationTests {
         this.driverType = driverType;
     }
 
-    String expectedErrorMessage = "Некорректный пароль";
-    String expectedText = "Оформить заказ";
+    private final String expectedErrorMessage = "Некорректный пароль";
+    private final String expectedText = "Оформить заказ";
 
     @Before
     public void setUp() {

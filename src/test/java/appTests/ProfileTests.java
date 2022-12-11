@@ -15,7 +15,8 @@ import org.openqa.selenium.WebDriver;
 
 import static models.LoginPage.LOGIN_PAGE_PATH;
 import static org.junit.Assert.assertEquals;
-import static utils.TestData.*;
+import static appTests.TestData.DEFAULT_EMAIL;
+import static appTests.TestData.DEFAULT_PASSWORD;
 
 @RunWith(Parameterized.class)
 public class ProfileTests {
@@ -27,7 +28,7 @@ public class ProfileTests {
         this.driverType = driverType;
     }
 
-    String expectedText = "В этом разделе вы можете изменить свои персональные данные";
+    private final String expectedText = "В этом разделе вы можете изменить свои персональные данные";
 
     @Before
     public void setUp() {

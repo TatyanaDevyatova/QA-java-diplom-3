@@ -15,7 +15,6 @@ public class MainPage {
     public static final String MAIN_PAGE_PATH = "https://stellarburgers.nomoreparties.site/";
 
     private final WebDriver driver;
-
     private final By profileLink = By.xpath(".//nav//p[text()='Личный Кабинет']");
     private final By signInButton = By.xpath(".//section[contains(@class,'BurgerConstructor_basket__29Cd7')]//button");
     private final By header = By.xpath(".//h1[text()='Соберите бургер']");

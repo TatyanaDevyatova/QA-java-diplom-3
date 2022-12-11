@@ -19,8 +19,8 @@ import static models.ForgotPasswordPage.FORGOT_PASSWORD_PAGE_PATH;
 import static models.MainPage.MAIN_PAGE_PATH;
 import static models.RegisterPage.REGISTER_PAGE_PATH;
 import static org.junit.Assert.assertEquals;
-import static utils.TestData.DEFAULT_EMAIL;
-import static utils.TestData.DEFAULT_PASSWORD;
+import static appTests.TestData.DEFAULT_EMAIL;
+import static appTests.TestData.DEFAULT_PASSWORD;
 
 @RunWith(Parameterized.class)
 public class UserSingingInTests {
@@ -31,7 +31,7 @@ public class UserSingingInTests {
         this.driverType = driverType;
     }
 
-    String expectedText = "Оформить заказ";
+    private final String expectedText = "Оформить заказ";
 
     @Before
     public void setUp() {
