@@ -1,4 +1,4 @@
-package driverFactory;
+package driverfactory;
 
 public enum DriverType {
     CHROME, YANDEX

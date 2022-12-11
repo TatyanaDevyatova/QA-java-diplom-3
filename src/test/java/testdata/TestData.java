@@ -1,4 +1,4 @@
-package appTests;
+package testdata;
 
 public class TestData {
     public static final String DEFAULT_EMAIL = "dvv-izh@yandex.ru";

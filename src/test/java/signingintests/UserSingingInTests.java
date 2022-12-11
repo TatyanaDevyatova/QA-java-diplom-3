@@ -1,7 +1,7 @@
-package appTests;
+package signingintests;
 
-import driverFactory.DriverFactory;
-import driverFactory.DriverType;
+import driverfactory.DriverFactory;
+import driverfactory.DriverType;
 import io.qameta.allure.Step;
 import io.qameta.allure.junit4.DisplayName;
 import models.ForgotPasswordPage;
@@ -19,8 +19,8 @@ import static models.ForgotPasswordPage.FORGOT_PASSWORD_PAGE_PATH;
 import static models.MainPage.MAIN_PAGE_PATH;
 import static models.RegisterPage.REGISTER_PAGE_PATH;
 import static org.junit.Assert.assertEquals;
-import static appTests.TestData.DEFAULT_EMAIL;
-import static appTests.TestData.DEFAULT_PASSWORD;
+import static testdata.TestData.DEFAULT_EMAIL;
+import static testdata.TestData.DEFAULT_PASSWORD;
 
 @RunWith(Parameterized.class)
 public class UserSingingInTests {
@@ -43,7 +43,7 @@ public class UserSingingInTests {
         driver.quit();
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}")
     public static Object[][] getDriverType() {
         return new Object[][]{
                 {DriverType.CHROME},

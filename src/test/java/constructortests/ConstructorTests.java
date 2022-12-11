@@ -1,7 +1,7 @@
-package appTests;
+package constructortests;
 
-import driverFactory.DriverFactory;
-import driverFactory.DriverType;
+import driverfactory.DriverFactory;
+import driverfactory.DriverType;
 import io.qameta.allure.junit4.DisplayName;
 import models.MainPage;
 import org.junit.After;
@@ -38,7 +38,7 @@ public class ConstructorTests {
         driver.quit();
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}")
     public static Object[][] getDriverType() {
         return new Object[][]{
                 {DriverType.CHROME},

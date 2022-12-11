@@ -1,7 +1,7 @@
-package appTests;
+package profiletests;
 
-import driverFactory.DriverFactory;
-import driverFactory.DriverType;
+import driverfactory.DriverFactory;
+import driverfactory.DriverType;
 import io.qameta.allure.junit4.DisplayName;
 import models.LoginPage;
 import models.MainPage;
@@ -15,8 +15,8 @@ import org.openqa.selenium.WebDriver;
 
 import static models.LoginPage.LOGIN_PAGE_PATH;
 import static org.junit.Assert.assertEquals;
-import static appTests.TestData.DEFAULT_EMAIL;
-import static appTests.TestData.DEFAULT_PASSWORD;
+import static testdata.TestData.DEFAULT_EMAIL;
+import static testdata.TestData.DEFAULT_PASSWORD;
 
 @RunWith(Parameterized.class)
 public class ProfileTests {
@@ -43,7 +43,7 @@ public class ProfileTests {
         driver.quit();
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}")
     public static Object[][] getDriverType() {
         return new Object[][]{
                 {DriverType.CHROME},

@@ -1,8 +1,8 @@
-package appTests;
+package registrationtests;
 
 import com.github.javafaker.Faker;
-import driverFactory.DriverFactory;
-import driverFactory.DriverType;
+import driverfactory.DriverFactory;
+import driverfactory.DriverType;
 import io.qameta.allure.junit4.DisplayName;
 import models.LoginPage;
 import models.MainPage;
@@ -42,7 +42,7 @@ public class UserRegistrationTests {
         driver.quit();
     }
 
-    @Parameterized.Parameters
+    @Parameterized.Parameters(name = "Тестовые данные: {0}")
     public static Object[][] getDriverType() {
         return new Object[][]{
                 {DriverType.CHROME},
